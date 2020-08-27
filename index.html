@@ -1,23 +1,416 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
 
-{% include hero-section.html %}
+<head>
+  <meta charset="utf-8">
+  <title>Ashwinikumar Kulkarni</title>
 
-{% include about-section.html %}
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="/assets/plugins/bootstrap/bootstrap.min.css">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="/assets/plugins/slick/slick.css">
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="/assets/plugins/themify-icons/themify-icons.css">
 
-{% include skills-section.html %}
+  <!-- Main Stylesheet -->
+  <link href="/assets/css/style.css" rel="stylesheet">
+  
+  <!--Favicon-->
+  <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon">
 
-{% include experience-section.html %}
+</head>
 
-{% include education-section.html %}
+<body>
 
-{% include services-section.html %}
+  
+  
+  <header class="navigation fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand font-tertiary h3" href="/">
+      
+        <img src="/assets/images/logo.png" alt="Ashwinikumar Kulkarni">
+      
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-{% include portfolio-section.html %}
+    <div class="collapse navbar-collapse text-center" id="navigation">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        
+          <li class="nav-item ">
+            <a class="nav-link" href="/about/">About</a>
+          </li>
+        
+          <li class="nav-item ">
+            <a class="nav-link" href="/blog/">Publications</a>
+          </li>
+        
+          <li class="nav-item ">
+            <a class="nav-link" href="/contact/">Contact</a>
+          </li>
+        
+      </ul>
+    </div>
+  </nav>
+</header>
 
-{% include testimonial-section.html %}
+  <!-- hero area -->
+<section class="hero-area bg-primary" id="parallax">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-11 mx-auto">
+        <h1 class="text-white font-tertiary">Ashwinikumar <br> Kulkarni <br> Ph.D.</h1>
+      </div>
+    </div>
+  </div>
+  <div class="layer-bg w-100">
+    <img class="img-fluid w-100" src="/assets/images/illustrations/leaf-bg.png" alt="bg-shape">
+  </div>
+  <div class="layer" id="l2">
+    <img src="/assets/images/illustrations/dots-group-cyan.png" alt="bg-shape">
+  </div>
+  <!--<div class="layer" id="l3">
+    <img src="/assets/images/illustrations/dots-orange.png" alt="bg-shape">
+  </div>-->
+  <div class="layer" id="l4">
+    <img src="/assets/images/illustrations/dots-orange.png" alt="bg-shape">
+  </div>
+  <!--<div class="layer" id="l5">
+    <img src="/assets/images/illustrations/dots-group-orange.png" alt="bg-shape">
+  </div>-->
+  <div class="layer" id="l6">
+    <img src="/assets/images/illustrations/dots-group-orange.png" alt="bg-shape">
+  </div>
+  <!--<div class="layer" id="l7">
+    <img src="/assets/images/illustrations/dots-group-orange.png" alt="bg-shape">
+  </div>-->
+  <div class="layer" id="l8">
+    <img src="/assets/images/illustrations/dots-orange.png" alt="bg-shape">
+  </div>
+  <div class="layer" id="l9">
+    <img src="/assets/images/illustrations/dots-group-orange.png" alt="bg-shape">
+  </div>
+  <!-- social icon -->
+  <ul class="list-unstyled ml-5 mt-3 position-relative zindex-1">
+    
+    <li class="mb-3"><a class="text-white" href="#"><i class="ti-github"></i></a></li>
+    
+    <li class="mb-3"><a class="text-white" href="#"><i class="ti-twitter"></i></a></li>
+    
+    <li class="mb-3"><a class="text-white" href="#"><i class="ti-linkedin"></i></a></li>
+    
+  </ul>
+  <!-- /social icon -->
+</section>
+<!-- /hero area -->
 
-{% include client-section.html %}
+<!-- about -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto text-center">
+        <p class="font-secondary paragraph-lg text-dark">I am a research scientist at the Prof. Konopka Lab, Department of Neuroscience, UT Southwestern Medical Center. Using next-generation sequencing at single cell resolutions coupled with computational and machine-learning approaches, I am studying the complex gene regulatory networks to identify genomic signatures involved in neurodevelopmental diseases, sleep and circadian regulation.</p>
+        <a href="/about" class="btn btn-transparent">know more</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /about -->
 
-{% include blog-section.html %}
+
+
+
+<!-- experience -->
+<section class="section">
+  <div class="container">
+    <div class="row justify-content-around">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-title">Experience</h2>
+      </div>
+      
+      <div class="col-lg-3 col-md-4 text-center">
+        <img src="/assets/images/experience/icon-2.png" alt="Experience icon">
+        <p class="mb-0">Mar 2016 - Till date</p>
+        <h4>Research Scientist</h4>
+        <h5 class="text-light">UT Southwestern</h5>
+      </div>
+      
+      <div class="col-lg-3 col-md-4 text-center">
+        <img src="/assets/images/experience/icon-2.png" alt="Experience icon">
+        <p class="mb-0">Mar 2016 - Till date</p>
+        <h4>Graduate Research Assistant</h4>
+        <h5 class="text-light">UT Southwestern</h5>
+      </div>
+      
+      <div class="col-lg-3 col-md-4 text-center">
+        <img src="/assets/images/experience/icon-2.png" alt="Experience icon">
+        <p class="mb-0">Mar 2016 - Till date</p>
+        <h4>Research Assistant II (Computational Biology)</h4>
+        <h5 class="text-light">UT Southwestern</h5>
+      </div>
+      
+      <div class="col-lg-3 col-md-4 text-center">
+        <img src="/assets/images/experience/icon-2.png" alt="Experience icon">
+        <p class="mb-0">Mar 2016 - Till date</p>
+        <h4>Executive (Research & Development)</h4>
+        <h5 class="text-light">UT Southwestern</h5>
+      </div>
+      
+      <div class="col-lg-3 col-md-4 text-center">
+        <img src="/assets/images/experience/icon-2.png" alt="Experience icon">
+        <p class="mb-0">Mar 2016 - Till date</p>
+        <h4>Research Trainee</h4>
+        <h5 class="text-light">UT Southwestern</h5>
+      </div>
+      
+      <div class="col-lg-3 col-md-4 text-center">
+        <img src="/assets/images/experience/icon-2.png" alt="Experience icon">
+        <p class="mb-0">Mar 2016 - Till date</p>
+        <h4>Research Associate cum Faculty</h4>
+        <h5 class="text-light">UT Southwestern</h5>
+      </div>
+      
+    </div>
+  </div>
+</section>
+<!-- ./experience -->
+
+
+
+
+<!-- education -->
+<section class="section position-relative">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-title">Education</h2>
+      </div>
+      
+      <div class="col-lg-6 col-md-6 mb-80">
+        <div class="d-flex">
+          <div class="mr-lg-5 mr-3">
+            <i class="ti-medall icon icon-light icon-bg bg-white shadow rounded-circle d-block"></i>
+          </div>
+          <div>
+            <p class="text-dark mb-1">2015</p>
+            <h4>Ph.D. (Computational Biology)</h4>
+            <!-- <p class="mb-0 text-light">University of Texas at Dallas, USA</p> -->
+            <h5 class="text-light">University of Texas at Dallas, USA</h5>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-6 col-md-6 mb-80">
+        <div class="d-flex">
+          <div class="mr-lg-5 mr-3">
+            <i class="ti-medall icon icon-light icon-bg bg-white shadow rounded-circle d-block"></i>
+          </div>
+          <div>
+            <p class="text-dark mb-1">2011</p>
+            <h4>M.S. (Molecular & Cell Biology)</h4>
+            <!-- <p class="mb-0 text-light">University of Texas at Dallas, USA</p> -->
+            <h5 class="text-light">University of Texas at Dallas, USA</h5>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-6 col-md-6 mb-80">
+        <div class="d-flex">
+          <div class="mr-lg-5 mr-3">
+            <i class="ti-medall icon icon-light icon-bg bg-white shadow rounded-circle d-block"></i>
+          </div>
+          <div>
+            <p class="text-dark mb-1">2005</p>
+            <h4>M.Sc. (Biotechnology)</h4>
+            <!-- <p class="mb-0 text-light">Nagpur University, India</p> -->
+            <h5 class="text-light">Nagpur University, India</h5>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-6 col-md-6 mb-80">
+        <div class="d-flex">
+          <div class="mr-lg-5 mr-3">
+            <i class="ti-medall icon icon-light icon-bg bg-white shadow rounded-circle d-block"></i>
+          </div>
+          <div>
+            <p class="text-dark mb-1">2003</p>
+            <h4>B.Sc. (Chemistry)</h4>
+            <!-- <p class="mb-0 text-light">Amravati University, India</p> -->
+            <h5 class="text-light">Amravati University, India</h5>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <!-- bg image -->
+  <img class="img-fluid edu-bg-image w-100" src="/assets/images/backgrounds/education-bg.png" alt="bg-image">
+</section>
+<!-- /education -->
+
+
+
+
+
+
+
+
+
+<!-- client logo slider -->
+<section class="section pb-0">
+  <div class="container">
+    
+  </div>
+</section>
+<!-- /client logo slider -->
+
+<!-- blog -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="section-title">Publications</h2>
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+        <article class="card shadow">
+          <img class="rounded card-img-top" src="/assets/images/blog/post-2.jpg" alt="An essential role for MEF2C in the cortical response to loss of sleep in mice">
+          <!-- <div class="card-body">
+            <h4 class="card-title"><a class="text-dark" href="/2020/08/26/sleep-elife/">Amazon increase income 1.5 Million</a>
+            </h4>
+            <p class="cars-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+              incididunt ut labore et
+              dolore magna aliqua.</p>
+            <a href="/2020/08/26/sleep-elife/" class="btn btn-xs btn-primary">Read More</a>
+          </div> -->
+          <div class="card-body">
+            <h4 class="card-title"><a class="text-dark" href="/2020/08/26/sleep-elife/">An essential role for MEF2C in the cortical response to loss of sleep in mice</h4>
+            <p class="cars-text">
+
+
+
+
+Neuronal activity and gene expression in response to the loss of sleep can provide a window into the enigma of sleep fu...</p>
+            <a href="/2020/08/26/sleep-elife/" class="btn btn-xs btn-primary">Read More</a>
+          </div>
+        </article>
+      </div>
+      
+      <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+        <article class="card shadow">
+          <img class="rounded card-img-top" src="/assets/images/blog/post-2.jpg" alt="Cortical Foxp2 Supports Behavioral Flexibility and Developmental Dopamine D1 Receptor Expression">
+          <!-- <div class="card-body">
+            <h4 class="card-title"><a class="text-dark" href="/2020/03/14/foxp2-cerebralcortex/">Amazon increase income 1.5 Million</a>
+            </h4>
+            <p class="cars-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+              incididunt ut labore et
+              dolore magna aliqua.</p>
+            <a href="/2020/03/14/foxp2-cerebralcortex/" class="btn btn-xs btn-primary">Read More</a>
+          </div> -->
+          <div class="card-body">
+            <h4 class="card-title"><a class="text-dark" href="/2020/03/14/foxp2-cerebralcortex/">Cortical Foxp2 Supports Behavioral Flexibility and Developmental Dopamine D1 Receptor Expression</h4>
+            <p class="cars-text">
+
+
+
+
+Genetic studies have associated FOXP2 variation with speech and language disorders and other neurodevelopmental disorde...</p>
+            <a href="/2020/03/14/foxp2-cerebralcortex/" class="btn btn-xs btn-primary">Read More</a>
+          </div>
+        </article>
+      </div>
+      
+    </div>
+  </div>
+</section>
+<!-- /blog -->
+
+
+  <!-- contact -->
+<section class="section section-on-footer" data-background="/assets/images/backgrounds/bg-dots.png">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="section-title">Contact Info</h2>
+      </div>
+      <div class="col-lg-8 mx-auto">
+        <div class="bg-white rounded text-center p-5 shadow-down">
+          <h4 class="mb-80">Contact Form</h4>
+          <form action="https://formspree.io/Ashwinikumar.Kulkarni@UTSouthwestern.edu" method="POST" class="row">
+            <div class="col-md-6">
+              <input type="text" id="name" name="name" placeholder="Full Name" class="form-control px-0 mb-4">
+            </div>
+            <div class="col-md-6">
+              <input type="email" id="email" name="_replyto" placeholder="Email Address" class="form-control px-0 mb-4">
+            </div>
+            <div class="col-12">
+              <textarea name="message" id="message" class="form-control px-0 mb-4"
+                placeholder="Type Message Here"></textarea>
+            </div>
+            <div class="col-lg-6 col-10 mx-auto">
+              <button type="submit" class="btn btn-primary w-100">send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /contact -->
+  
+  <!-- footer -->
+<footer class="bg-dark footer-section">
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5 class="text-light">Email</h5>
+          <p class="text-white paragraph-lg font-secondary">Ashwinikumar.Kulkarni<br>@UTSouthwestern.edu</p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="text-light">Phone</h5>
+          <p class="text-white paragraph-lg font-secondary">(214) 648-5138</p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="text-light">Address</h5>
+          <p class="text-white paragraph-lg font-secondary">UT Southwestern, ND4.300 <br> 6001 Forest Park, Road <br> Dallas, TX. 75390</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="border-top text-center border-dark py-5">
+    <p class="mb-0 text-light">Copyright © <script>
+        var CurrentYear = new Date().getFullYear()
+        document.write(CurrentYear)
+      </script> Ashwinikumar Kulkarni. Developed by <a href=https://apricot.solutions>Apricot Solutions</a>. Adapted from <a href="https://github.com/themefisher/kross-jekyll-portfolio-template">Kross</a> for <a href="https://jekyllrb.com">Jekyll</a>.</p>
+  </div>
+</footer>
+<!-- /footer -->
+
+
+  <!-- jQuery -->
+  <script src="/assets/plugins/jQuery/jquery.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="/assets/plugins/bootstrap/bootstrap.min.js"></script>
+  <!-- slick slider -->
+  <script src="/assets/plugins/slick/slick.min.js"></script>
+  <!-- filter -->
+  <script src="/assets/plugins/shuffle/shuffle.min.js"></script>
+
+  <!-- Main Script -->
+  <script src="/assets/js/script.js"></script>
+</body>
+
+</html>
