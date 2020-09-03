@@ -22,7 +22,7 @@ menu:
 
 # NOTE: If you want to use Google Analytics for basic web tracking: Just uncomment and enter your UA-Code here.
 
-google-analytics: # UA-XXXXXX-X
+google-analytics: UA-177253427-1 # UA-XXXXXX-X
 
 
 #-------------------------------
@@ -42,9 +42,9 @@ social:
 # - {icon: "ti-facebook", link: "#"}
 # - {icon: "ti-instagram", link: "#"}
 # - {icon: "ti-dribbble", link: "#"}
-- {icon: "ti-github", link: "#"}
-- {icon: "ti-twitter", link: "#"}
-- {icon: "ti-linkedin", link: "#"}
+- {icon: "ti-github", link: "https://github.com/ashwinikumarkulkarni"}
+- {icon: "ti-twitter", link: "https://twitter.com/ashwinikumark"}
+- {icon: "ti-linkedin", link: "https://www.linkedin.com/in/ashwinikumar-kulkarni-ph-d-6a614316/"}
 
 
 #-------------------------------
@@ -109,12 +109,12 @@ experience:
 # - {name: Junior UX Designer, icon: 'icon-1.png', date: 'Jan 2007 - Feb 2009', organization: 'WEBEX'}
 # - {name: UX & UI Designer, icon: 'icon-2.png', date: 'Mar 2009 - Aug 2014', organization: 'AUGMEDIX'}
 # - {name: Senior UI Designer, icon: 'icon-3.png', date: 'Sep 2014 - Present', organization: 'THEMEFISHER'}
-- {name: Research Scientist, icon: 'scientist.png', date: 'Mar 2016 - Till date', organization: 'UT Southwestern'}
-- {name: Graduate Research Assistant, icon: 'university.png', date: 'Mar 2016 - Till date', organization: 'UT Southwestern'}
-- {name: Research Assistant II (Computational Biology), icon: 'researcher.png', date: 'Mar 2016 - Till date', organization: 'UT Southwestern'}
-- {name: Executive (Research & Development), icon: 'scientist.png', date: 'Mar 2016 - Till date', organization: 'UT Southwestern'}
-- {name: Research Trainee, icon: 'microscope.png', date: 'Mar 2016 - Till date', organization: 'UT Southwestern'}
-- {name: Research Associate cum Faculty, icon: 'teacher.png', date: 'Mar 2016 - Till date', organization: 'UT Southwestern'}
+- {name: Research Scientist, icon: 'scientist.png', date: 'Mar 2016 - Till date', organization: 'Prof. Konopka Lab, UT Southwestern'}
+- {name: Graduate Research Assistant, icon: 'university.png', date: 'Aug 2011 - Dec 2015', organization: 'UT Dallas & UT Southwestern'}
+- {name: Research Assistant II (Computational Biology), icon: 'researcher.png', date: 'Oct 2010 - Aug 2011', organization: 'Prof. Melanie Cobb Lab, UT Southwestern'}
+- {name: Executive (Research & Development), icon: 'scientist.png', date: 'Mar 2009 - Jul 2009', organization: 'Yashraj Biotechnolgy Limited, Mumbai, India'}
+- {name: Research Trainee, icon: 'microscope.png', date: 'Aug 2008 - Mar 2009', organization: 'Indian Institute of Chemical Technology, Hyderabad, India'}
+- {name: Research Associate cum Faculty, icon: 'teacher.png', date: 'Aug 2006 - Aug 2008', organization: 'Genecity Laboratires Pvt. Ltd., Pune, India'}
 # - {name: Research, icon: 'icon-3.png', date: 'Mar 2016 - Till date', organization: 'UT Southwestern'}
 # - {name: Research Scientist, icon: 'icon-1.png', date: 'Mar 2016 - Till date', organization: 'UT Southwestern'}
 
