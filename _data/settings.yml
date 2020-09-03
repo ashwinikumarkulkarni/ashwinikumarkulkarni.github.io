@@ -8,10 +8,10 @@ phone: (214) 648-5138
 address: UT Southwestern, ND4.300 <br> 6001 Forest Park, Road <br> Dallas, TX. 75390
 
 menu:
-- {name: About, link: '/about/'}
-- {name: Publications, link: '/blog/'}
+- {name: About, link: '/about.html'}
+- {name: Publications, link: '/blog.html'}
 # - {name: Portfolio, link: '/portfolio/'}
-- {name: Contact, link: '/contact/'}
+- {name: Contact, link: '/contact.html'}
 
 
 #-------------------------------
