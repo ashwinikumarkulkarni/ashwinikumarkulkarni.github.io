@@ -1,4 +1,7 @@
-<div align="center">
+## GitHub Pages
+Please visit <a href="https://ashwinikumarkulkarni.github.io" >https://ashwinikumarkulkarni.github.io</a>
+
+<!-- <div align="center">
 	<h1>kross-jekyll-portfolio-template</h1>
 	<p> Kross jekyll Creative Portfolio Template ported from https://themefisher.com/products/kross-creative-portfolio-template/</p>
 	<a href="http://demo.themefisher.com/kross" >Live Preview</a>
@@ -56,4 +59,4 @@ If you have questions or need help integrating the product please [contact us](m
 
 - Copyright 2019 Themefisher (https://themefisher.com/)
 - Licensed under MIT (https://github.com/themefisher/kross-jekyll-portfolio-template/blob/master/LICENSE.txt)
-
+ -->
