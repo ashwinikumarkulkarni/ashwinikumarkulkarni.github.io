@@ -1,3 +1,5 @@
+---
+---
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0"
 	xmlns:atom="http://www.w3.org/2005/Atom"
@@ -5,297 +7,27 @@
 	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
 >
 	<channel>
-		<title></title>
-		<description>Computational Biology, Neuroscience, Genomics, Transcriptomics, Machine Learning
-</description>		
-		<sy:updatePeriod>daily</sy:updatePeriod>
-		<sy:updateFrequency>1</sy:updateFrequency>
-		<link>http://localhost:4000/</link>
-		<atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-		<lastBuildDate>Sat, 12 Jun 2021 00:00:00 -0500</lastBuildDate>
-		
-		
-            
+		<title>{{ site.name | xml_escape }}</title>
+		<description>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</description>		
+		<sy:updatePeriod>{{ site.feed_update_period | default: "daily" | xml_escape }}</sy:updatePeriod>
+		<sy:updateFrequency>{{ site.feed_update_frequency | default: 1 | xml_escape }}</sy:updateFrequency>
+		<link>{{ site.url }}/</link>
+		<atom:link href="{{ site.url }}{{ page.url }}" rel="self" type="application/rss+xml" />
+		<lastBuildDate>{% for post in site.posts limit:1 %}{{ post.date | date_to_rfc822 }}{% endfor %}</lastBuildDate>
+		{% assign feed_items = site.feed_items | default: 10 %}
+		{% for post in site.posts limit:feed_items %}
+            {% unless post.listed == false %}
                 <item>
-                    <title>NPAS4 regulates the transcriptional response of the suprachiasmatic nucleus to light and circadian behavior</title>
-                    
-                        <description>&lt;!-- ![post-thumb](/assets/images/blog/post-1.jpg){:class=&quot;img-fluid rounded float-left mr-5 mb-4&quot;} --&gt;
-
-&lt;!-- **Sleep abnormalities are associated with long-term changes in brain function. The authors of this study investigated the transcriptional changes in frontal cortex that accompany sleep loss in mice in order to gain insight into the molecular basis of these plasticity changes. The key results reveal transcriptional mechanisms that underlie changes in brain function with sleep deprivation and strong functional evidence of a role for MEF2C in the regulation of synaptic plasticity and sleep homeostasis.** --&gt;
-
-&lt;p&gt;The suprachiasmatic nucleus (SCN) is the master circadian pacemaker in
-mammals and is entrained by environmental light. However, the molecular basis of the
-response of the SCN to light is not fully understood. We used RNA/Chromatin
-Immunoprecipitation/single-nucleus sequencing with circadian behavioral assays to
-identify mouse SCN cell types and to explore their responses to light. We identified
-three peptidergic cell types that responded to light in the SCN: (arginine vasopressin
-[AVP], vasoactive intestinal peptide [VIP], and cholecystokinin [CCK]). In each cell type,
-light-responsive subgroups were enriched for expression of Neuronal PAS Domain
-Protein 4 (NPAS4) target genes. Further, mice lacking Npas4 had a longer circadian
-period in constant conditions, a damped phase response curve to light, and reduced
-light-induced gene expression in the SCN. Together, our data indicate that NPAS4 is
-necessary for normal transcriptional responses to light in the SCN and is critical for
-photic phase-shifting of circadian behavior.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Under Revision at Neuron, June 2021.&lt;/em&gt;&lt;/p&gt;
-</description>
-                    <pubDate>Sat, 12 Jun 2021 00:00:00 -0500</pubDate>
-                    <link>http://localhost:4000/2021/06/12/scn-neuron.html</link>
-                    <guid isPermaLink="true">http://localhost:4000/2021/06/12/scn-neuron.html</guid>
+                    <title>{{ post.title | xml_escape }}</title>
+                    {% if post.author.name %}
+                        <dc:creator>{{ post.author.name | xml_escape }}</dc:creator>
+                    {% endif %}
+                        <description>{{ post.content | xml_escape }}</description>
+                    <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+                    <link>{{ site.url }}{{ post.url }}</link>
+                    <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
                 </item>
-            
-		
-            
-                <item>
-                    <title>Resolving cellular and molecular diversity along the hippocampal anterior-to-posterior axis in humans</title>
-                    
-                        <description>&lt;!-- ![post-thumb](/assets/images/blog/post-1.jpg){:class=&quot;img-fluid rounded float-left mr-5 mb-4&quot;} --&gt;
-
-&lt;!-- **Sleep abnormalities are associated with long-term changes in brain function. The authors of this study investigated the transcriptional changes in frontal cortex that accompany sleep loss in mice in order to gain insight into the molecular basis of these plasticity changes. The key results reveal transcriptional mechanisms that underlie changes in brain function with sleep deprivation and strong functional evidence of a role for MEF2C in the regulation of synaptic plasticity and sleep homeostasis.** --&gt;
-
-&lt;p&gt;The hippocampus supports many facets of cognition, including learning, memory, and emotional processing. Anatomically, the hippocampus runs along a longitudinal axis, posterior to anterior in primates. The structure, function, and connectivity of the hippocampus vary along this axis. In human hippocampus, longitudinal functional heterogeneity remains an active area of investigation, and structural heterogeneity has not been described. To understand the cellular and molecular diversity along the hippocampal long axis in human brain and define molecular signatures corresponding to functional domains, we performed single-nuclei RNA sequencing on surgically resected human anterior and posterior hippocampus from epilepsy patients, identifying differentially expressed genes at cellular resolution. We further identify axis- and cell-type-specific gene expression signatures that differentially intersect with human genetic signals, identifying cell-type-specific genes in the posterior hippocampus for cognitive function and the anterior hippocampus for mood and affect. These data are accessible as a public resource through an interactive website.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Published Online at Neuron, May 2021. &lt;a target=&quot;_blank&quot; href=&quot;https://doi.org/10.1016/j.neuron.2021.05.003&quot;&gt;doi.org/10.1016/j.neuron.2021.05.003&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-</description>
-                    <pubDate>Fri, 28 May 2021 00:00:00 -0500</pubDate>
-                    <link>http://localhost:4000/2021/05/28/hippo-neuron.html</link>
-                    <guid isPermaLink="true">http://localhost:4000/2021/05/28/hippo-neuron.html</guid>
-                </item>
-            
-		
-            
-                <item>
-                    <title>Expression of FoxP2 in the Basal Ganglia Regulates Vocal Motor Sequences in the Adult Songbird</title>
-                    
-                        <description>&lt;!-- ![post-thumb](/assets/images/blog/post-1.jpg){:class=&quot;img-fluid rounded float-left mr-5 mb-4&quot;} --&gt;
-
-&lt;!-- **Sleep abnormalities are associated with long-term changes in brain function. The authors of this study investigated the transcriptional changes in frontal cortex that accompany sleep loss in mice in order to gain insight into the molecular basis of these plasticity changes. The key results reveal transcriptional mechanisms that underlie changes in brain function with sleep deprivation and strong functional evidence of a role for MEF2C in the regulation of synaptic plasticity and sleep homeostasis.** --&gt;
-
-&lt;p&gt;Disruption of the transcription factor FoxP2, which is enriched in the basal ganglia, impairs vocal development in humans and songbirds. The basal ganglia are important for the selection and sequencing of motor actions, but the circuit mechanisms governing accurate sequencing of learned vocalizations are unknown. Here, we show that expression of FoxP2 in the basal ganglia is vital for the fluent initiation and termination of birdsong, as well as the maintenance of song syllable sequencing in adulthood. Knockdown of FoxP2 imbalances dopamine receptor expression across striatal direct-like and indirect-like pathways, suggesting a role of dopaminergic signaling in regulating vocal motor sequencing. Confirming this prediction, we show that phasic dopamine activation, and not inhibition, during singing drives repetition of song syllables, thus also impairing fluent initiation and termination of birdsong. These findings demonstrate discrete circuit origins for the dysfluent repetition of vocal elements in songbirds, with implications for speech disorders.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Published at Nature Communications, May 2021. &lt;a target=&quot;_blank&quot; href=&quot;https://doi.org/10.1038/s41467-021-22918-2&quot;&gt;doi.org/10.1038/s41467-021-22918-2&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-</description>
-                    <pubDate>Tue, 11 May 2021 00:00:00 -0500</pubDate>
-                    <link>http://localhost:4000/2021/05/11/birdfoxp2-natcom.html</link>
-                    <guid isPermaLink="true">http://localhost:4000/2021/05/11/birdfoxp2-natcom.html</guid>
-                </item>
-            
-		
-            
-                <item>
-                    <title>FOXP1 negatively regulates intrinsic excitability in D2 striatal projection neurons by promoting inwardly rectifying and leak potassium currents</title>
-                    
-                        <description>&lt;!-- ![post-thumb](/assets/images/blog/post-1.jpg){:class=&quot;img-fluid rounded float-left mr-5 mb-4&quot;} --&gt;
-
-&lt;p&gt;Heterozygous loss-of-function mutations in the transcription factor FOXP1 are strongly associated with autism. Dopamine receptor 2 expressing (D2) striatal projection neurons (SPNs) in heterozygous Foxp1 (Foxp1+/-) mice have higher intrinsic excitability. To understand the mechanisms underlying this alteration, we examined SPNs with cell-type specific homozygous Foxp1 deletion to study cell-autonomous regulation by Foxp1. As in Foxp1+/- mice, D2 SPNs had increased intrinsic excitability with homozygous Foxp1 deletion. This effect involved postnatal mechanisms. The hyperexcitability was mainly due to down-regulation of two classes of potassium currents: inwardly rectifying (KIR) and leak (KLeak). Single-cell RNA sequencing data from D2 SPNs with Foxp1 deletion indicated the down-regulation of transcripts of candidate ion channels that may underlie these currents: Kcnj2 and Kcnj4 for KIR and Kcnk2 for KLeak. This Foxp1-dependent regulation was neuron-type specific since these same currents and transcripts were either unchanged, or very little changed, in D1 SPNs with cell-specific Foxp1 deletion. Our data are consistent with a model where FOXP1 negatively regulates the excitability of D2 SPNs through KIR and KLeak by transcriptionally activating their corresponding transcripts. This, in turn, provides a novel example of how a transcription factor may regulate multiple genes to impact neuronal electrophysiological function that depends on the integration of multiple current types - and do this in a cell-specific fashion. Our findings provide initial clues to altered neuronal function and possible therapeutic strategies not only for FOXP1-associated autism but also for other autism forms associated with transcription factor dysfunction.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Published at Molecular Psychiatry, Jan 2021. &lt;a target=&quot;_blank&quot; href=&quot;https://doi.org/10.1038/s41380-020-00995-x&quot;&gt;doi.org/10.1038/s41380-020-00995-x&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-</description>
-                    <pubDate>Tue, 05 Jan 2021 00:00:00 -0600</pubDate>
-                    <link>http://localhost:4000/2021/01/05/foxp1d2spn-molpsy.html</link>
-                    <guid isPermaLink="true">http://localhost:4000/2021/01/05/foxp1d2spn-molpsy.html</guid>
-                </item>
-            
-		
-            
-                <item>
-                    <title>An essential role for MEF2C in the cortical response to loss of sleep in mice</title>
-                    
-                        <description>&lt;!-- ![post-thumb](/assets/images/blog/post-1.jpg){:class=&quot;img-fluid rounded float-left mr-5 mb-4&quot;} --&gt;
-
-&lt;!-- **Sleep abnormalities are associated with long-term changes in brain function. The authors of this study investigated the transcriptional changes in frontal cortex that accompany sleep loss in mice in order to gain insight into the molecular basis of these plasticity changes. The key results reveal transcriptional mechanisms that underlie changes in brain function with sleep deprivation and strong functional evidence of a role for MEF2C in the regulation of synaptic plasticity and sleep homeostasis.** --&gt;
-
-&lt;p&gt;Neuronal activity and gene expression in response to the loss of sleep can
-provide a window into the enigma of sleep function. Sleep loss is associated
-with brain differential gene expression, an increase in pyramidal cell mEPSC
-frequency and amplitude, and a characteristic rebound and resolution of slow
-wave sleep-slow wave activity (SWS-SWA). However, the molecular mechanism(s)
-mediating the sleep loss response are not well understood. We show that
-sleep-loss regulates MEF2C phosphorylation, a key mechanism regulating MEF2C
-transcriptional activity, and that MEF2C function in postnatal excitatory
-forebrain neurons is required for the biological events in response to sleep
-loss in C57BL/6J mice. These include altered gene expression, the increase and
-recovery of synaptic strength, and the rebound and resolution of SWS-SWA, which
-implicate MEF2C as an essential regulator of sleep function.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Accepted at eLife, Aug 2020. &lt;a target=&quot;_blank&quot; href=&quot;https://doi.org/10.7554/eLife.58331&quot;&gt;doi.org/10.7554/eLife.58331&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-</description>
-                    <pubDate>Wed, 26 Aug 2020 00:00:00 -0500</pubDate>
-                    <link>http://localhost:4000/2020/08/26/sleep-elife.html</link>
-                    <guid isPermaLink="true">http://localhost:4000/2020/08/26/sleep-elife.html</guid>
-                </item>
-            
-		
-            
-                <item>
-                    <title>Single-cell analysis of Foxp1-driven mechanisms essential for striatal development</title>
-                    
-                        <description>&lt;!-- ![post-thumb](/assets/images/blog/post-1.jpg){:class=&quot;img-fluid rounded float-left mr-5 mb-4&quot;} --&gt;
-
-&lt;p&gt;The striatum is a critical forebrain structure integrating cognitive, sensory,
-and motor information from diverse brain regions into meaningful behavioral
-output. However, the transcriptional mechanisms underlying striatal development
-at single-cell resolution remain unknown. Using single-cell RNA sequencing
-(RNA-seq), we examine the cellular diversity of the early postnatal striatum and
-show that Foxp1, a transcription factor strongly linked to autism and
-intellectual disability, regulates the cellular composition, neurochemical
-architecture, and connectivity of the striatum in a cell-type-dependent fashion.
-We also identify Foxp1-regulated target genes within distinct cell types and
-connect these molecular changes to functional and behavioral deficits relevant
-to phenotypes described in patients with FOXP1 loss-of-function mutations. Using
-this approach, we could also examine the non-cell-autonomous effects produced by
-disrupting one cell type and the molecular compensation that occurs in other
-populations. These data reveal the cell-type-specific transcriptional mechanisms
-regulated by Foxp1 that underlie distinct features of striatal circuitry.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Cell reports 30 (9), 3051-3066. e7. &lt;a target=&quot;_blank&quot; href=&quot;https://doi.org/10.1016/j.celrep.2020.02.030&quot;&gt;doi.org/10.1016/j.celrep.2020.02.030&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-</description>
-                    <pubDate>Sun, 01 Mar 2020 00:00:00 -0600</pubDate>
-                    <link>http://localhost:4000/2020/03/01/foxp1-cellreports.html</link>
-                    <guid isPermaLink="true">http://localhost:4000/2020/03/01/foxp1-cellreports.html</guid>
-                </item>
-            
-		
-            
-                <item>
-                    <title>Cortical Foxp2 Supports Behavioral Flexibility and Developmental Dopamine D1 Receptor Expression</title>
-                    
-                        <description>&lt;!-- ![post-thumb](/assets/images/blog/post-1.jpg){:class=&quot;img-fluid rounded float-left mr-5 mb-4&quot;} --&gt;
-
-&lt;p&gt;Genetic studies have associated FOXP2 variation with speech and language
-disorders and other neurodevelopmental disorders (NDDs) involving pathology of
-the cortex. In this brain region, FoxP2 is expressed from development into
-adulthood, but little is known about its downstream molecular and behavioral
-functions. Here, we characterized cortex-specific Foxp2 conditional knockout
-mice and found a major deficit in reversal learning, a form of behavioral
-flexibility. In contrast, they showed normal activity levels, anxiety, and
-vocalizations, save for a slight decrease in neonatal call loudness. These
-behavioral phenotypes were accompanied by decreased cortical dopamine D1
-receptor (D1R) expression at neonatal and adult stages, while general cortical
-development remained unaffected. Finally, using single-cell transcriptomics, we
-identified at least five excitatory and three inhibitory D1R-expressing cell
-types in neonatal frontal cortex, and we found changes in D1R cell type
-composition and gene expression upon cortical Foxp2 deletion. Strikingly, these
-alterations included non-cell-autonomous changes in upper layer neurons and
-interneurons. Together, these data support a role for Foxp2 in the development
-of dopamine-modulated cortical circuits and behaviors relevant to NDDs.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Cerebral Cortex, Volume 30, Issue 3, March 2020, Pages 1855–1870, &lt;a target=&quot;_blank&quot; href=&quot;https://doi.org/10.1093/cercor/bhz209&quot;&gt; doi.org/10.1093/cercor/bhz209&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
-</description>
-                    <pubDate>Mon, 11 Nov 2019 00:00:00 -0600</pubDate>
-                    <link>http://localhost:4000/2019/11/11/foxp2-cerebralcortex.html</link>
-                    <guid isPermaLink="true">http://localhost:4000/2019/11/11/foxp2-cerebralcortex.html</guid>
-                </item>
-            
-		
-            
-                <item>
-                    <title>Beyond bulk - a review of single cell transcriptomics methodologies and applications</title>
-                    
-                        <description>&lt;!-- ![post-thumb](/assets/images/blog/post-1.jpg){:class=&quot;img-fluid rounded float-left mr-5 mb-4&quot;} --&gt;
-
-&lt;p&gt;Single-cell RNA sequencing (scRNA-seq) is a promising approach to study the
-transcriptomes of individual cells in the brain and the central nervous system
-(CNS). This technology acts as a bridge between neuroscience, computational
-biology, and systems biology, enabling an unbiased and novel understanding of
-the cellular composition of the brain and CNS. Gene expression at the single
-cell resolution is often noisy, sparse, and high-dimensional, creating
-challenges for computational analysis of such data. In this review, we overview
-fundamental sample preparation and data analysis processes of scRNA-seq and
-provide a comparative perspective for analyzing and visualizing these data.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Current Opinion in Biotechnology, 2019, 58: 129-136. &lt;a target=&quot;_blank&quot; href=&quot;https://doi.org/10.1016/j.copbio.2019.03.001&quot;&gt;doi.org/10.1016/j.copbio.2019.03.001&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-</description>
-                    <pubDate>Wed, 10 Apr 2019 00:00:00 -0500</pubDate>
-                    <link>http://localhost:4000/2019/04/10/beyondbulk-copbio.html</link>
-                    <guid isPermaLink="true">http://localhost:4000/2019/04/10/beyondbulk-copbio.html</guid>
-                </item>
-            
-		
-            
-                <item>
-                    <title>Foxp1 regulation of neonatal vocalizations via cortical development</title>
-                    
-                        <description>&lt;!-- ![post-thumb](/assets/images/blog/post-1.jpg){:class=&quot;img-fluid rounded float-left mr-5 mb-4&quot;} --&gt;
-
-&lt;p&gt;The molecular mechanisms driving brain development at risk in autism spectrum
-disorders (ASDs) remain mostly unknown. Previous studies have implicated the
-transcription factor FOXP1 in both brain development and ASD pathophysiology.
-However, the specific molecular pathways both upstream of and downstream from
-FOXP1 are not fully understood. To elucidate the contribution of FOXP1-mediated
-signaling to brain development and, in particular, neocortical development, we
-generated forebrain-specific Foxp1 conditional knockout mice. We show that
-deletion of Foxp1 in the developing forebrain leads to impairments in neonatal
-vocalizations as well as neocortical cytoarchitectonic alterations via neuronal
-positioning and migration. Using a genomics approach, we identified the
-transcriptional networks regulated by Foxp1 in the developing neocortex and
-found that such networks are enriched for downstream targets involved in
-neurogenesis and neuronal migration. We also uncovered mechanistic insight into
-Foxp1 function by demonstrating that sumoylation of Foxp1 during embryonic brain
-development is necessary for mediating proper interactions between Foxp1 and the
-NuRD complex. Furthermore, we demonstrated that sumoylation of Foxp1 affects
-neuronal differentiation and migration in the developing neocortex. Together,
-these data provide critical mechanistic insights into the function of FOXP1 in
-the developing neocortex and may reveal molecular pathways at risk in ASD.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Genes Dev. 2017 Oct 15;31(20):2039-2055. Epub 2017 Nov 14. &lt;a target=&quot;_blank&quot; href=&quot;https://doi.org/10.1101/gad.305037.117&quot;&gt;doi.org/10.1101/gad.305037.117&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-</description>
-                    <pubDate>Tue, 14 Nov 2017 00:00:00 -0600</pubDate>
-                    <link>http://localhost:4000/2017/11/14/foxp1cortex-gnd.html</link>
-                    <guid isPermaLink="true">http://localhost:4000/2017/11/14/foxp1cortex-gnd.html</guid>
-                </item>
-            
-		
-            
-                <item>
-                    <title>Foxp1 in Forebrain Pyramidal Neurons Controls Gene Expression Required for Spatial Learning and Synaptic Plasticity</title>
-                    
-                        <description>&lt;!-- ![post-thumb](/assets/images/blog/post-1.jpg){:class=&quot;img-fluid rounded float-left mr-5 mb-4&quot;} --&gt;
-
-&lt;p&gt;Genetic perturbations of the transcription factor Forkhead Box P1 (FOXP1) are
-causative for severe forms of autism spectrum disorder that are often comorbid
-with intellectual disability. Recent work has begun to reveal an important role
-for FoxP1 in brain development, but the brain-region-specific contributions of
-Foxp1 to autism and intellectual disability phenotypes have yet to be determined
-fully. Here, we describe Foxp1 conditional knock-out (Foxp1cKO) male and female
-mice with loss of Foxp1 in the pyramidal neurons of the neocortex and the
-CA1/CA2 subfields of the hippocampus. Foxp1cKO mice exhibit behavioral
-phenotypes that are of potential relevance to autism spectrum disorder,
-including hyperactivity, increased anxiety, communication impairments, and
-decreased sociability. In addition, Foxp1cKO mice have gross deficits in
-learning and memory tasks of relevance to intellectual disability. Using a
-genome-wide approach, we identified differentially expressed genes in the
-hippocampus of Foxp1cKO mice associated with synaptic function and development.
-Furthermore, using magnetic resonance imaging, we uncovered a significant
-reduction in the volumes of both the entire hippocampus as well as individual
-hippocampal subfields of Foxp1cKO mice. Finally, we observed reduced maintenance
-of LTP in area CA1 of the hippocampus in these mutant mice. Together, these data
-suggest that proper expression of Foxp1 in the pyramidal neurons of the
-forebrain is important for regulating gene expression pathways that contribute
-to specific behaviors reminiscent of those seen in autism and intellectual
-disability. In particular, Foxp1 regulation of gene expression appears to be
-crucial for normal hippocampal development, CA1 plasticity, and spatial
-learning.&lt;/p&gt;
-
-&lt;p&gt;SIGNIFICANCE STATEMENT Loss-of-function mutations in the transcription
-factor Forkhead Box P1 (FOXP1) lead to autism spectrum disorder and intellectual
-disability. Understanding the potential brain-region-specific contributions of
-FOXP1 to disease-relevant phenotypes could be a critical first step in the
-management of patients with these mutations. Here, we report that Foxp1
-conditional knock-out (Foxp1cKO) mice with loss of Foxp1 in the neocortex and
-hippocampus display autism and intellectual-disability-relevant behaviors. We
-also show that these phenotypes correlate with changes in both the genomic and
-physiological profiles of the hippocampus in Foxp1cKO mice. Our work
-demonstrates that brain-region-specific FOXP1 expression may relate to distinct,
-clinically relevant phenotypes.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;J Neurosci. 2017 Nov 8;37(45):10917-10931. Epub 2017 Oct 4. &lt;a target=&quot;_blank&quot; href=&quot;https://doi.org/10.1523/JNEUROSCI.1005-17.2017&quot;&gt;doi.org/10.1523/JNEUROSCI.1005-17.2017&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-</description>
-                    <pubDate>Wed, 08 Nov 2017 00:00:00 -0600</pubDate>
-                    <link>http://localhost:4000/2017/11/08/foxp1cortex-jneuro.html</link>
-                    <guid isPermaLink="true">http://localhost:4000/2017/11/08/foxp1cortex-jneuro.html</guid>
-                </item>
-            
-		
+            {% endunless %}
+		{% endfor %}
 	</channel>
 </rss>
