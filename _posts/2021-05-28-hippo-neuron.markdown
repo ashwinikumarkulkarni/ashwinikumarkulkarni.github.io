@@ -2,9 +2,11 @@
 layout: post
 title:  Resolving cellular and molecular diversity along the hippocampal anterior-to-posterior axis in humans
 date:   2021-05-28
-image: NeuronHippoSeqCover.jpeg
 author: Ashwinikumar Kulkarni
 tags:   [2021, Neuron]
+splash_img_source: /assets/img/NeuronHippoSeqCover.jpeg
+splash_img_caption: Neuron Cover.
+
 ---
 <!-- ![post-thumb]({{site.baseurl}}/assets/images/blog/post-1.jpg){:class="img-fluid rounded float-left mr-5 mb-4"} -->
 
