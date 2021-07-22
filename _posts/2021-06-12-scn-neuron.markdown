@@ -26,4 +26,4 @@ necessary for normal transcriptional responses to light in the SCN and is critic
 photic phase-shifting of circadian behavior.
 
 
-*Under Revision at Neuron, June 2021.*
+*Accepted at Neuron, July 2021.*
