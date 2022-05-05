@@ -1,0 +1,26 @@
+---
+layout: post
+title:  Epigenomic Analysis of Multilineage Differentiation of Human Embryonic Stem Cells
+date:   2013-05-23
+author: Ashwinikumar Kulkarni
+tags:   [2013, Cell, epigenetics, HESC]
+---
+
+**Cell. 2013 May 23;153(5):1134-48. Epub 2013 May 9.**<br>
+**<a target="_blank" href="https://doi.org/10.1016/j.cell.2013.04.022">doi.org/10.1016/j.cell.2013.04.022</a>**
+
+Epigenetic mechanisms have been proposed to play crucial roles in mammalian
+development, but their precise functions are only partially understood. To
+investigate epigenetic regulation of embryonic development, we differentiated
+human embryonic stem cells into mesendoderm, neural progenitor cells,
+trophoblast-like cells, and mesenchymal stem cells and systematically
+characterized DNA methylation, chromatin modifications, and the transcriptome in
+each lineage. We found that promoters that are active in early developmental
+stages tend to be CG rich and mainly engage H3K27me3 upon silencing in
+nonexpressing lineages. By contrast, promoters for genes expressed
+preferentially at later stages are often CG poor and primarily employ DNA
+methylation upon repression. Interestingly, the early developmental regulatory
+genes are often located in large genomic domains that are generally devoid of
+DNA methylation in most lineages, which we termed DNA methylation valleys
+(DMVs). Our results suggest that distinct epigenetic mechanisms regulate early
+and late stages of ES cell differentiation.

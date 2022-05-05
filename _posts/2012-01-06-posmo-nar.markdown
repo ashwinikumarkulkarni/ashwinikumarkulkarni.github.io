@@ -1,0 +1,25 @@
+---
+layout: post
+title:  A highly efficient and effective motif discovery method for ChIP-seq/ChIP-chip data using positional information
+date:   2012-01-06
+author: Ashwinikumar Kulkarni
+tags:   [2012, NucleicAcidResearch, TranscriptionFactors, POSMO]
+---
+
+**Nucleic Acids Res. 2012 Apr;40(7):e50.**<br>
+**<a target="_blank" href="https://doi.org/10.1093/nar/gkr1135">doi.org/10.1093/nar/gkr1135</a>**
+
+Identification of DNA motifs from ChIP-seq/ChIP-chip [chromatin
+immunoprecipitation (ChIP)] data is a powerful method for understanding the
+transcriptional regulatory network. However, most established methods are
+designed for small sample sizes and are inefficient for ChIP data. Here we
+propose a new k-mer occurrence model to reflect the fact that functional DNA
+k-mers often cluster around ChIP peak summits. With this model, we introduced a
+new measure to discover functional k-mers. Using simulation, we demonstrated
+that our method is more robust against noises in ChIP data than available
+methods. A novel word clustering method is also implemented to group similar
+k-mers into position weight matrices (PWMs). Our method was applied to a diverse
+set of ChIP experiments to demonstrate its high sensitivity and specificity.
+Importantly, our method is much faster than several other methods for large
+sample sizes. Thus, we have developed an efficient and effective motif discovery
+method for ChIP experiments.
