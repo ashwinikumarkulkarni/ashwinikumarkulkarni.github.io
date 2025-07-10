@@ -1,6 +1,6 @@
 
 ## PROJECT 1
-- name: Transcriptomics and Genomics # Project name, also used as heading
+- name: Transcriptomics, Genomics # Project name, also used as heading
   id: p1 # Project id, must be unique amongst the projects
   img_src: /assets/img/p1.png # Optional image
   description_less: > # Description shown at all times
@@ -8,11 +8,11 @@
   description_more: > # Description shown only when the project card is expanded
     <!-- <p>Text after expanded.</p> -->
 
-  tags: [transcriptomics, genomics, singlecellrnaseq, singlecellatacseq] # A list of tags
+  tags: [transcriptomics, genomics, singlecellrnaseq, singlecellatacseq, multiomics, spatial] # A list of tags
 
 
 ## PROJECT 2
-- name: Neurodevelopmental Disabilities
+- name: Brain Disorders
   id: p2
   img_src: /assets/img/p2.png # Optional image
   description_less: >
@@ -20,7 +20,7 @@
   description_more: >
     <!-- <p>Text after expanded.</p> -->
 
-  tags: [earlybraindevelopment, autismspectrumdisorders, organoids]
+  tags: [earlybraindevelopment, autismspectrumdisorders, alzheimer's disease]
 
 ## PROJECT 3
 - name: Sleep and Circadian Rhythm Disorders
