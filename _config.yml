@@ -1,5 +1,5 @@
-title: Ashwinikumar Kulkarni, Ph.D. # Shown in header on pages with full_logo: true
-short_logo: Ashwinikumar Kulkarni, Ph.D. # Shown in header on all pages by default unless full_logo: true is set
+title: Neuroinformatics, O'Donnell Brain Institute # Shown in header on pages with full_logo: true
+short_logo: Neuroinformatics, O'Donnell Brain Institute # Shown in header on all pages by default unless full_logo: true is set
 description: > # The description for your site
   Computational Biology, Neuroscience, Genomics, Transcriptomics, Machine Learning
 url: "https://ashwinikumarkulkarni.github.io" # Site base URL
