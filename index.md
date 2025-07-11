@@ -8,14 +8,6 @@ sitemap:
   priority: 1.0
 ---
 
-- name: Transcriptomics, Genomics # Project name, also used as heading
-  id: p1 # Project id, must be unique amongst the projects
-  img_src: /assets/img/p1.png # Optional image
-  description_less: > # Description shown at all times
-    <!-- <p>Text before expanded.</p> -->
-  description_more: > # Description shown only when the project card is expanded
-    <!-- <p>Text after expanded.</p> -->
-
 
 <p id="details-text">I am a Director of Neuroinformatics and an Assistant Professor at the <a href="https://odonnellbraininstitute.utsouthwestern.edu">Peter O'Donnell Jr. Brain Institute (OBI)</a> with a secondary appointment at <a href="https://www.utsouthwestern.edu/education/medical-school/departments/neuroscience/">Department of Neuroscience</a>, <a href="https://utsouthwestern.edu">UT Southwestern Medical Center</a>. Using next-generation sequencing approaches at single cell resolution coupled with computational and machine-learning approaches, I am studying the complex gene regulatory networks to identify genomic signatures involved in brain disorders, sleep and circadian regulation.</p>
 
